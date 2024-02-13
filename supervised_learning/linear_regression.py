@@ -52,7 +52,9 @@ epochs = 1000
 
 # Fitting the line
 weights, loss = gradient_descent(x, y, learning_rate, epochs)
-# print("Weights:", weights)
+print("Weights:", weights)
+# Output: Weights: [0.65459371 0.00933853 0.11411113] - [y_intercept, weight of feature 1, weight of feature 2]
+# y = 0.65459371 + x1*0.00933853 + x2*0.11411113
 
-# plt.plot(loss)
-# plt.show()
+plt.plot(loss)
+plt.show()
